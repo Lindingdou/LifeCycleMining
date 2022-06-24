@@ -1,0 +1,99 @@
+﻿<Fluent:RibbonWindow x:Class="LCMApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LCMApp"
+        mc:Ignorable="d" IsIconVisible="false" TitleBackground="#2B4E9A" TitleBarHeight="30"  TitleForeground="White"
+        Title="采矿全生命周期开采软件系统" Height="1080" Width="1920" Background="GhostWhite" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\1.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="952*"/>
+        </Grid.ColumnDefinitions>
+
+        <Fluent:Ribbon Grid.ColumnSpan="2" Margin="0,0,0.334,0" IsQuickAccessToolBarVisible="false">
+
+            
+            <Fluent:Ribbon.Menu>
+
+                <Fluent:Backstage Background="FloralWhite" Foreground="Black"/>
+
+            </Fluent:Ribbon.Menu>
+
+
+
+            <Fluent:RibbonTabItem Header="默认" >
+                <Fluent:RibbonGroupBox Header="工具" >
+                    <Fluent:Button Name="t1" Header="Green1"/>
+                    <Fluent:Button Name="t2" Header="Grey1"/>
+                </Fluent:RibbonGroupBox>
+
+            </Fluent:RibbonTabItem>
+
+
+            <Fluent:RibbonTabItem Header="三维可视化地质模型">
+                <Fluent:RibbonGroupBox Header="地质数据库">
+                    <Fluent:Button Name="data_zuankong" Header="钻孔管理" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\zuankong.png"/>
+                    <Fluent:Button Name="data_meizhi" Header="煤质管理" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\zhiliang.png"/>
+                    <Fluent:Button Name="data_tuxing" Header="图形数据管理" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\tuxing.png"/>
+                </Fluent:RibbonGroupBox>
+                
+                <Fluent:RibbonGroupBox Header="模型加载与创建">
+                    <Fluent:Button Name="model_dwg" Header="DWG加载" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\dwg.png"/>
+                    <Fluent:Button Name="model_osgb" Header="OSGB加载" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\osgb.png"/>
+                    <Fluent:Button Name="model_DEM" Header="DEM加载" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\DEM.png"/>
+                    <Fluent:Button Name="model_qumian" Header="创建曲面"/>
+                    <Fluent:Button Name="model_cemian" Header="创建侧面"/>
+                    <Fluent:Button Name="model_mesh" Header="多面格网"/>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="地质图件展绘">
+                    <Fluent:Button Name="draw_dzx" Header="等值线"/>
+                    <Fluent:Button Name="draw_zuankong" Header="虚拟钻孔"/>                    
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="空间数据检索">
+                    <Fluent:Button Name="report_area" Header="面积"/>
+                    <Fluent:Button Name="report_dis" Header="距离"/>
+                    <Fluent:Button Name="report_vol" Header="体积"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="地质统计分析">
+                    <Fluent:Button Name="alg_julimici" Header="距离幂次反比法"/>
+                    <Fluent:Button Name="alg_mianfangcheng" Header="面方程插值"/>
+                    <Fluent:Button Name="alg_qushimian" Header="面方程插值"/>
+                </Fluent:RibbonGroupBox>
+
+
+            </Fluent:RibbonTabItem>
+            <Fluent:RibbonTabItem Header="剥采工程辅助设计模块" >
+                <Fluent:RibbonGroupBox Header="工艺参数管理" >
+                    <Fluent:Button Name="buttonGreen1" Header="Green1"/>
+                    <Fluent:Button Name="buttonGray1" Header="Grey1"/>
+                </Fluent:RibbonGroupBox>
+
+            </Fluent:RibbonTabItem>
+
+
+
+
+
+
+
+            <Fluent:RibbonTabItem Header="道路运输系统辅助设计模块">
+
+
+            </Fluent:RibbonTabItem>
+
+
+
+
+
+
+
+
+        </Fluent:Ribbon>
+
+    </Grid>
+</Fluent:RibbonWindow>

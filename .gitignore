@@ -1,0 +1,12 @@
+
+packages/
+
+LCMApp/bin/
+
+LCMApp/obj/
+
+LCMApp/Resources/
+
+KeyGDI/obj/
+
+CoreSQL/obj/
