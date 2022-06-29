@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LCMApp"
         mc:Ignorable="d" IsIconVisible="false" TitleBackground="#2B4E9A" TitleBarHeight="30"  TitleForeground="White"
-        Title="采矿全生命周期开采软件系统" Height="1080" Width="1920" Background="GhostWhite" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\1.png">
+        Title="采矿全生命周期开采软件系统" Height="1080" Width="1920" Background="GhostWhite" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
@@ -15,7 +15,7 @@
 
         <Fluent:Ribbon Grid.ColumnSpan="2" Margin="0,0,0.334,0" IsQuickAccessToolBarVisible="false">
 
-            
+
             <Fluent:Ribbon.Menu>
 
                 <Fluent:Backstage Background="FloralWhite" Foreground="Black"/>
@@ -25,9 +25,36 @@
 
 
             <Fluent:RibbonTabItem Header="默认" >
-                <Fluent:RibbonGroupBox Header="工具" >
-                    <Fluent:Button Name="t1" Header="Green1"/>
-                    <Fluent:Button Name="t2" Header="Grey1"/>
+                <Fluent:RibbonGroupBox Header="绘图" >
+                    <Fluent:Button Name="darw_poly" Header="多段线"/>
+                    <Fluent:Button Name="darw_point" SizeDefinition="Middle, Middle, Middle" Header="点"/>
+                    <Fluent:Button Name="darw_line" SizeDefinition="Middle, Middle, Middle" Header="直线"/>
+
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="修改" >
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:Button Name="modify_move"  SizeDefinition="Middle, Middle, Middle"  Header="移动" />
+                        <Fluent:Button Name="modify_rotate" SizeDefinition="Middle, Middle, Middle" Header="旋转" />
+                        <Fluent:Button Name="modify_cut" SizeDefinition="Middle, Middle, Middle" Header="裁剪"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:Button Name="modify_copy"  SizeDefinition="Middle, Middle, Middle"  Header="复制" />
+                        <Fluent:Button Name="modify_mirror" SizeDefinition="Middle, Middle, Middle" Header="镜像" />
+                        <Fluent:Button Name="modify_delete" SizeDefinition="Middle, Middle, Middle" Header="删除"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:Button Name="modify_split"  SizeDefinition="Middle, Middle, Middle"  Header="分解" />
+                        <Fluent:Button Name="modify_offset" SizeDefinition="Middle, Middle, Middle" Header="偏移" />
+                    </StackPanel>
+
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="图层" Width="241">
+                    <Fluent:Button Name="layer_manager" Header="图层特性" Width="33"/>
+                    <Fluent:InRibbonGallery MinItemsInRow="1" MaxItemsInRow="5" ItemWidth="50" ItemHeight="18" GroupBy="Group" ResizeMode="Both" Margin="0,3,0,0" Width="200">
+                      
+                    </Fluent:InRibbonGallery>
+
                 </Fluent:RibbonGroupBox>
 
             </Fluent:RibbonTabItem>
@@ -35,22 +62,22 @@
 
             <Fluent:RibbonTabItem Header="三维可视化地质模型">
                 <Fluent:RibbonGroupBox Header="地质数据库">
-                    <Fluent:Button Name="data_zuankong" Header="钻孔管理" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\zuankong.png"/>
-                    <Fluent:Button Name="data_meizhi" Header="煤质管理" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\zhiliang.png"/>
-                    <Fluent:Button Name="data_tuxing" Header="图形数据管理" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\tuxing.png"/>
+                    <Fluent:Button Name="data_zuankong" Header="钻孔管理" Icon="../../Resources/images/zuankong.png"/>
+                    <Fluent:Button Name="data_meizhi" Header="煤质管理" Icon="../../Resources\images\zhiliang.png"/>
+                    <Fluent:Button Name="data_tuxing" Header="图形数据管理" Icon="../../Resources\images\tuxing.png"/>
                 </Fluent:RibbonGroupBox>
-                
+
                 <Fluent:RibbonGroupBox Header="模型加载与创建">
-                    <Fluent:Button Name="model_dwg" Header="DWG加载" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\dwg.png"/>
-                    <Fluent:Button Name="model_osgb" Header="OSGB加载" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\osgb.png"/>
-                    <Fluent:Button Name="model_DEM" Header="DEM加载" Icon="D:\LifeCycleMining\LCMining\LifeCycleMining\LCMApp\Resources\images\DEM.png"/>
+                    <Fluent:Button Name="model_dwg" Header="DWG加载" Icon="../../Resources\images\dwg.png"/>
+                    <Fluent:Button Name="model_osgb" Header="OSGB加载" Icon="../../Resources\images\osgb.png"/>
+                    <Fluent:Button Name="model_DEM" Header="DEM加载" Icon="../../Resources\images\DEM.png"/>
                     <Fluent:Button Name="model_qumian" Header="创建曲面"/>
                     <Fluent:Button Name="model_cemian" Header="创建侧面"/>
                     <Fluent:Button Name="model_mesh" Header="多面格网"/>
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="地质图件展绘">
                     <Fluent:Button Name="draw_dzx" Header="等值线"/>
-                    <Fluent:Button Name="draw_zuankong" Header="虚拟钻孔"/>                    
+                    <Fluent:Button Name="draw_zuankong" Header="虚拟钻孔"/>
                 </Fluent:RibbonGroupBox>
 
                 <Fluent:RibbonGroupBox Header="空间数据检索">
