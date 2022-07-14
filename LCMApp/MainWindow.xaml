@@ -26,80 +26,117 @@
 
             <Fluent:RibbonTabItem Header="默认" >
                 <Fluent:RibbonGroupBox Header="绘图" >
-                    <Fluent:Button Name="darw_poly" Header="多段线"/>
-                    <Fluent:Button Name="darw_point" SizeDefinition="Middle, Middle, Middle" Header="点"/>
-                    <Fluent:Button Name="darw_line" SizeDefinition="Middle, Middle, Middle" Header="直线"/>
+                    <Fluent:Button Name="darw_poly" Header="多段线"  Icon="../../Resources\images\polyline.png"/>
+                    <Fluent:Button Name="darw_point" SizeDefinition="Middle, Middle, Middle" Header="点" Icon="../../Resources\images\point.png"/>
+                    <Fluent:Button Name="darw_line" SizeDefinition="Middle, Middle, Middle" Header="直线" Icon="../../Resources\images\line.png"/>
 
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="修改" >
                     <StackPanel Orientation="Horizontal">
-                        <Fluent:Button Name="modify_move"  SizeDefinition="Middle, Middle, Middle"  Header="移动" />
-                        <Fluent:Button Name="modify_rotate" SizeDefinition="Middle, Middle, Middle" Header="旋转" />
-                        <Fluent:Button Name="modify_cut" SizeDefinition="Middle, Middle, Middle" Header="裁剪"/>
+                        <Fluent:Button Name="modify_move"  SizeDefinition="Middle, Middle, Middle"  Header="平移" Icon="../../Resources\images\move.png"/>
+                        <Fluent:Button Name="modify_rotate" SizeDefinition="Middle, Middle, Middle" Header="旋转" Icon="../../Resources\images\rotate.png"/>
+                        <Fluent:Button Name="modify_cut" SizeDefinition="Middle, Middle, Middle" Header="裁剪" Icon="../../Resources\images\cut.png"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Fluent:Button Name="modify_copy"  SizeDefinition="Middle, Middle, Middle"  Header="复制" />
-                        <Fluent:Button Name="modify_mirror" SizeDefinition="Middle, Middle, Middle" Header="镜像" />
-                        <Fluent:Button Name="modify_delete" SizeDefinition="Middle, Middle, Middle" Header="删除"/>
+                        <Fluent:Button Name="modify_copy"  SizeDefinition="Middle, Middle, Middle"  Header="复制" Icon="../../Resources\images\copy.png"/>
+                        <Fluent:Button Name="modify_mirror" SizeDefinition="Middle, Middle, Middle" Header="镜像" Icon="../../Resources\images\mirror.png"/>
+                        <Fluent:Button Name="modify_delete" SizeDefinition="Middle, Middle, Middle" Header="删除" Icon="../../Resources\images\delete.png"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Fluent:Button Name="modify_split"  SizeDefinition="Middle, Middle, Middle"  Header="分解" />
-                        <Fluent:Button Name="modify_offset" SizeDefinition="Middle, Middle, Middle" Header="偏移" />
+                        <Fluent:Button Name="modify_split"  SizeDefinition="Middle, Middle, Middle"  Header="分解" Icon="../../Resources\images\split.png"/>
+                        <Fluent:Button Name="modify_offset" SizeDefinition="Middle, Middle, Middle" Header="偏移" Icon="../../Resources\images\offset.png"/>
                     </StackPanel>
 
                 </Fluent:RibbonGroupBox>
 
-                <Fluent:RibbonGroupBox Header="图层" Width="241">
-                    <Fluent:Button Name="layer_manager" Header="图层特性" Width="33"/>
-                    <Fluent:InRibbonGallery MinItemsInRow="1" MaxItemsInRow="5" ItemWidth="50" ItemHeight="18" GroupBy="Group" ResizeMode="Both" Margin="0,3,0,0" Width="200">
-                      
+                <Fluent:RibbonGroupBox Header="图层" Width="270">
+                    <Fluent:Button Name="layer_manager" Header="图层特性" Width="33" Icon="../../Resources\images\layer.png"/>
+                    <Fluent:InRibbonGallery MinItemsInRow="1" MaxItemsInRow="5" ItemWidth="50" ItemHeight="18" GroupBy="Group" ResizeMode="Both" Margin="5,3,0,0" Width="220">
+
                     </Fluent:InRibbonGallery>
 
                 </Fluent:RibbonGroupBox>
 
-            </Fluent:RibbonTabItem>
-
-
-            <Fluent:RibbonTabItem Header="三维可视化地质模型">
-                <Fluent:RibbonGroupBox Header="地质数据库">
-                    <Fluent:Button Name="data_zuankong" Header="钻孔管理" Icon="../../Resources/images/zuankong.png"/>
-                    <Fluent:Button Name="data_meizhi" Header="煤质管理" Icon="../../Resources\images\zhiliang.png"/>
-                    <Fluent:Button Name="data_tuxing" Header="图形数据管理" Icon="../../Resources\images\tuxing.png"/>
-                </Fluent:RibbonGroupBox>
-
-                <Fluent:RibbonGroupBox Header="模型加载与创建">
-                    <Fluent:Button Name="model_dwg" Header="DWG加载" Icon="../../Resources\images\dwg.png"/>
-                    <Fluent:Button Name="model_osgb" Header="OSGB加载" Icon="../../Resources\images\osgb.png"/>
-                    <Fluent:Button Name="model_DEM" Header="DEM加载" Icon="../../Resources\images\DEM.png"/>
-                    <Fluent:Button Name="model_qumian" Header="创建曲面"/>
-                    <Fluent:Button Name="model_cemian" Header="创建侧面"/>
-                    <Fluent:Button Name="model_mesh" Header="多面格网"/>
-                </Fluent:RibbonGroupBox>
-                <Fluent:RibbonGroupBox Header="地质图件展绘">
-                    <Fluent:Button Name="draw_dzx" Header="等值线"/>
-                    <Fluent:Button Name="draw_zuankong" Header="虚拟钻孔"/>
-                </Fluent:RibbonGroupBox>
-
-                <Fluent:RibbonGroupBox Header="空间数据检索">
-                    <Fluent:Button Name="report_area" Header="面积"/>
-                    <Fluent:Button Name="report_dis" Header="距离"/>
-                    <Fluent:Button Name="report_vol" Header="体积"/>
+                <Fluent:RibbonGroupBox Header="属性指标计算">
+                    <Fluent:Button Name="report_area" Header="面积" Icon="../../Resources\images\area.png"/>
+                    <Fluent:Button Name="report_dis" Header="距离" Icon="../../Resources\images\distance.png"/>
+                    <Fluent:Button Name="report_vol" Header="体积" Icon="../../Resources\images\volume.png"/>
                 </Fluent:RibbonGroupBox>
 
                 <Fluent:RibbonGroupBox Header="地质统计分析">
-                    <Fluent:Button Name="alg_julimici" Header="距离幂次反比法"/>
-                    <Fluent:Button Name="alg_mianfangcheng" Header="面方程插值"/>
-                    <Fluent:Button Name="alg_qushimian" Header="面方程插值"/>
+                    <Fluent:Button Name="alg_xx" Header="线性" Icon="../../Resources\images\alg_line.png"/>
+                    <Fluent:Button Name="alg_sxx" Header="双线性" Icon="../../Resources\images\alg_sxx.png"/>
+                    <Fluent:Button Name="alg_dxs" Header="多项式" Icon="../../Resources\images\alg_dxs.png"/>
+                    <Fluent:Button Name="alg_jlmc" Header="距离幂次反比" Icon="../../Resources\images\alg_jlmc.png"/>
+                    <Fluent:Button Name="alg_mfc" Header="面方程" Icon="../../Resources\images\alg_mfc.png"/>
+                    <Fluent:Button Name="alg_qsm" Header="趋势面" Icon="../../Resources\images\alg_qsm.png"/>
+
+                    <Fluent:SplitButton Header="克里金" Icon="../../Resources\images\alg_klj.png">
+                        <Fluent:MenuItem Name="alg_jdklj" Header="简单克里金" Icon="../../Resources\images\jdklj.png"/>
+                        <Fluent:MenuItem Name="alg_ptklj" Header="普通克里金" Icon="../../Resources\images\ptklj.png"/>
+                        <Fluent:MenuItem Name="alg_fklj" Header="泛克里金" Icon="../../Resources\images\fklj.png"/>
+                        
+                    </Fluent:SplitButton>
+                </Fluent:RibbonGroupBox>
+
+            </Fluent:RibbonTabItem>
+
+
+            <Fluent:RibbonTabItem Header="三维可视化采矿模型">
+                <Fluent:RibbonGroupBox Header="地质数据库">
+                    <Fluent:Button Name="data_zuankong" Header="钻孔管理" Icon="../../Resources/images/zuankong.png"/>
+                    <Fluent:Button Name="data_meizhi" Header="煤质管理" Icon="../../Resources\images\zhiliang.png"/>
+                    <Fluent:Button Name="data_tuxing" Header="图形管理" Icon="../../Resources\images\tuxing.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="模型加载与建模">
+                    <Fluent:Button Name="model_dwg" Header="DXF数据"  Icon="../../Resources\images\dwg.png"/>
+                    <Fluent:Button Name="model_osgb" Header="OSGB数据" Icon="../../Resources\images\osgb.png"/>
+                    <Fluent:Button Name="model_DEM" Header="DEM数据" Icon="../../Resources\images\DEM.png"/>
+                    <Fluent:Button Name="model_qumian" Header="三角网" Icon="../../Resources\images\3DTri.png"/>
+                    <Fluent:Button Name="model_cemian" Header="侧三角网" Icon="../../Resources\images\cemian.png"/>
+                    <Fluent:Button Name="model_mesh" Header="多面格网" Icon="../../Resources\images\mesh.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="地质图件展绘">
+                    <Fluent:Button Name="draw_dzx" Header="等值线" Icon="../../Resources\images\iosline.png"/>
+                    <Fluent:Button Name="draw_zuankong" Header="虚拟钻孔" Icon="../../Resources\images\3dzk.png"/>
                 </Fluent:RibbonGroupBox>
 
 
-            </Fluent:RibbonTabItem>
-            <Fluent:RibbonTabItem Header="剥采工程辅助设计模块" >
+
                 <Fluent:RibbonGroupBox Header="工艺参数管理" >
                     <Fluent:Button Name="buttonGreen1" Header="Green1"/>
                     <Fluent:Button Name="buttonGray1" Header="Grey1"/>
                 </Fluent:RibbonGroupBox>
 
+                <Fluent:RibbonGroupBox Header="剥采工程辅助设计" >
+
+                    <Fluent:Button Name="expTemp" Header="模板设计"  Icon="../../Resources\images\expTemp.png"/>
+                    <Fluent:Button Name="expStage" Header="预置模板" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\expStage.png"/>
+                    <Fluent:Button Name="expeditTemp" Header="模板编辑" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\expModTemp.png"/>
+                    <Fluent:Button Name="expinsertTemp" Header="插入模板" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\insert.png"/>
+
+                    <Fluent:Button Name="expdtbydis" Header="距离驱动" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dtbydis.png"/>
+                    <Fluent:Button Name="expdtbyVol" Header="煤量驱动" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dtbyvol.png"/>
+
+                    <Fluent:Button Name="expSplit" Header="切分模型"  Icon="../../Resources\images\expSplit.png"/>
+
+                    <Fluent:Button Name="expsplitlayer" Header="载入分层" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\splitlayer.png"/>
+                    <Fluent:Button Name="exppara" Header="载入参数" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\para.png"/>
+                    <Fluent:Button Name="expmodle" Header="采矿模型"  Icon="../../Resources\images\block.png"/>
+
+
+
+
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="排土工程辅助设计" >
+                    <Fluent:Button Name="dumpStage" Header="排土阶段"/>
+
+                </Fluent:RibbonGroupBox>
+
+
             </Fluent:RibbonTabItem>
 
 
@@ -108,12 +145,65 @@
 
 
 
-            <Fluent:RibbonTabItem Header="道路运输系统辅助设计模块">
+            <Fluent:RibbonTabItem Header="道路运输系统">
+
+                <Fluent:RibbonGroupBox Header="基础路网编制与维护">
+                    <Fluent:Button Name="addvertex" Header="添加节点" Icon="../../Resources\images\addvertex.png"/>
+                    <Fluent:Button Name="delvertex" Header="删除节点"  SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\delvertex.png"/>
+                    <Fluent:Button Name="extvertex" Header="扩展信息" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\extinfo.png"/>
+                    <Fluent:Button Name="regenvertex" Header="更新节点" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\regeninfo.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="道路分级与路面参数管理">
+                    <Fluent:Button Name="classroad" Header="标定级别" Icon="../../Resources\images\road.png"/>
+                    <Fluent:Button Name="roadsurfaceindex" Header="路面指标" Icon="../../Resources\images\roadsindex.png" />
+                    <Fluent:Button Name="curing" Header="养护周期" Icon="../../Resources\images\curing.png" />
+                    <Fluent:Button Name="curingpredict" Header="养护计划" Icon="../../Resources\images\planning.png" />
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="路段聚合节点分析">
+                    <Fluent:Button Name="expVert" Header="采场节点" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\expnode.png"/>
+                    <Fluent:Button Name="dumpVert" Header="排土节点" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dumpnode.png" />
+                    <Fluent:Button Name="rule" Header="聚合规则" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\rule.png" />
+                    <Fluent:Button Name="analysis" Header="聚合分析"  Icon="../../Resources\images\calc.png" />
+                    <Fluent:Button Name="roadnet" Header="新增路网" Icon="../../Resources\images\roadnet.png" />
+                </Fluent:RibbonGroupBox>
+
+
+                <Fluent:RibbonGroupBox Header="开拓运输方案布置">
+                    <Fluent:Button Name="load" Header="负载计算"  Icon="../../Resources\images\load.png"/>
+                    <Fluent:Button Name="truck" Header="效能评价" Icon="../../Resources\images\truck.png" />
+                    <Fluent:Button Name="placenode" Header="节点布置" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\rule.png" />
+                    <Fluent:Button Name="sroad" Header="斜坡道布置" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\calc.png" />
+                    <Fluent:Button Name="routing" Header="开拓方案" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\routing.png" />
+                    <Fluent:Button Name="routedis" Header="运距" Icon="../../Resources\images\routedis.png" />
+                </Fluent:RibbonGroupBox>
+
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Header="作业设备信息化管理">
+
 
 
             </Fluent:RibbonTabItem>
 
+            <Fluent:RibbonTabItem Header="成本核算与规划决策建模">
 
+
+
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Header="土地复垦与绿化辅助设计">
+
+
+
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Header="模拟开采与三维可视化仿真">
+
+
+
+            </Fluent:RibbonTabItem>
 
 
 
