@@ -75,7 +75,6 @@
                         <Fluent:MenuItem Name="alg_jdklj" Header="简单克里金" Icon="../../Resources\images\jdklj.png"/>
                         <Fluent:MenuItem Name="alg_ptklj" Header="普通克里金" Icon="../../Resources\images\ptklj.png"/>
                         <Fluent:MenuItem Name="alg_fklj" Header="泛克里金" Icon="../../Resources\images\fklj.png"/>
-                        
                     </Fluent:SplitButton>
                 </Fluent:RibbonGroupBox>
 
@@ -106,8 +105,10 @@
 
 
                 <Fluent:RibbonGroupBox Header="工艺参数管理" >
-                    <Fluent:Button Name="buttonGreen1" Header="Green1"/>
-                    <Fluent:Button Name="buttonGray1" Header="Grey1"/>
+                    <Fluent:Button Name="paras1" Header="剥离系统" Icon="../../Resources\images\para1.png"/>
+                    <Fluent:Button Name="paras2" Header="采煤系统" Icon="../../Resources\images\para2.png"/>
+                    <Fluent:Button Name="paras3" Header="运输系统" Icon="../../Resources\images\para3.png"/>
+                    <Fluent:Button Name="paras4" Header="排土工艺" Icon="../../Resources\images\para4.png"/>
                 </Fluent:RibbonGroupBox>
 
                 <Fluent:RibbonGroupBox Header="剥采工程辅助设计" >
@@ -116,27 +117,21 @@
                     <Fluent:Button Name="expStage" Header="预置模板" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\expStage.png"/>
                     <Fluent:Button Name="expeditTemp" Header="模板编辑" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\expModTemp.png"/>
                     <Fluent:Button Name="expinsertTemp" Header="插入模板" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\insert.png"/>
-
                     <Fluent:Button Name="expdtbydis" Header="距离驱动" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dtbydis.png"/>
                     <Fluent:Button Name="expdtbyVol" Header="煤量驱动" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dtbyvol.png"/>
-
                     <Fluent:Button Name="expSplit" Header="切分模型"  Icon="../../Resources\images\expSplit.png"/>
-
                     <Fluent:Button Name="expsplitlayer" Header="载入分层" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\splitlayer.png"/>
                     <Fluent:Button Name="exppara" Header="载入参数" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\para.png"/>
                     <Fluent:Button Name="expmodle" Header="采矿模型"  Icon="../../Resources\images\block.png"/>
-
-
-
-
                 </Fluent:RibbonGroupBox>
 
                 <Fluent:RibbonGroupBox Header="排土工程辅助设计" >
-                    <Fluent:Button Name="dumpStage" Header="排土阶段"/>
-
+                    <Fluent:Button Name="dumppara1" Header="载入参数" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dumppara1.png"/>
+                    <Fluent:Button Name="dumppara2" Header="排土台阶线" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\dumppara2.png"/>
+                    <Fluent:Button Name="dumppara3" Header="扩展台阶"  Icon="../../Resources\images\dumppara3.png"/>
+                    <Fluent:Button Name="dumppara4" Header="排土量计算"  Icon="../../Resources\images\dumppara4.png"/>
+                    <Fluent:Button Name="dumppara5" Header="容差校核"  Icon="../../Resources\images\dumppara5.png"/>
                 </Fluent:RibbonGroupBox>
-
-
             </Fluent:RibbonTabItem>
 
 
@@ -183,32 +178,122 @@
 
             <Fluent:RibbonTabItem Header="作业设备信息化管理">
 
+                <Fluent:RibbonGroupBox Header="技术指标管理与维护">
+                    <Fluent:Button Name="excEq" Header="采剥设备"  Icon="../../Resources\images\equ.png"/>
+                    <Fluent:Button Name="transEq" Header="运输设备"  Icon="../../Resources\images\transEq.png"/>
+                    <Fluent:Button Name="dumpEq" Header="排土设备"  Icon="../../Resources\images\dumpEq.png"/>
+                </Fluent:RibbonGroupBox>
 
+                <Fluent:RibbonGroupBox Header="状态信息管理与维护">
+                    <Fluent:Button Name="EquStat" Header="设备统计"  Icon="../../Resources\images\stat.png"/>
+                    <Fluent:Button Name="EquBook" Header="机修台账"  Icon="../../Resources\images\book.png"/>
+                    <Fluent:Button Name="curingperiod" Header="养护周期"  Icon="../../Resources\images\forecast.png"/>
+                    <Fluent:Button Name="repair" Header="机修时间"  Icon="../../Resources\images\repair.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="效能评价">
+                    <Fluent:Button Name="efficiency" Header="台班能力"  Icon="../../Resources\images\efficiency.png"/>
+                    <Fluent:Button Name="loss" Header="效能损失"  Icon="../../Resources\images\loss.png"/>
+
+                </Fluent:RibbonGroupBox>
+
+
+                <Fluent:RibbonGroupBox Header="经济性分析">
+                    <Fluent:Button Name="range" Header="作业范围"  Icon="../../Resources\images\range.png"/>
+                    <Fluent:Button Name="dispatch" Header="设备移设"  Icon="../../Resources\images\dispatch.png"/>
+                </Fluent:RibbonGroupBox>
 
             </Fluent:RibbonTabItem>
 
             <Fluent:RibbonTabItem Header="成本核算与规划决策建模">
+                <Fluent:RibbonGroupBox Header="设备效能及成本计算">
+                    <Fluent:Button Name="xnpj" Header="效能评定"  Icon="../../Resources\images\xnpj.png"/>
+                    <Fluent:Button Name="yhcb" Header="养护成本"  Icon="../../Resources\images\yhcb.png"/>
+                    <Fluent:Button Name="zjgl" Header="最佳功率"  Icon="../../Resources\images\zjgl.png"/>
+                    <Fluent:Button Name="llcb" Header="理论成本"  Icon="../../Resources\images\llcb.png"/>
+                    <Fluent:Button Name="pycb" Header="偏移成本"  Icon="../../Resources\images\pycb.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="运输成本计算">
+                    <Fluent:Button Name="ljsj" Header="路基设计" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\ljsj.png"/>
+                    <Fluent:Button Name="qrlj" Header="嵌入路基" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\qrlj.png"/>
+                    <Fluent:Button Name="jghlm" Header="结构化路面" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\jghlm.png"/>
+                    <Fluent:Button Name="tsf" Header="土石方" Icon="../../Resources\images\tsf.png"/>
+                    <Fluent:Button Name="zlcb" Header="筑路成本" Icon="../../Resources\images\zlcb.png"/>
+                    <Fluent:Button Name="gdzl" Header="滚动阻力系数"  SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\gdzl.png"/>
+                    <Fluent:Button Name="yhzq" Header="养护周期预测"  SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\yhzq.png"/>
+                    <Fluent:Button Name="lmyh" Header="养护成本" Icon="../../Resources\images\lmyh.png"/>
+                    <Fluent:Button Name="yscb" Header="运输成本" Icon="../../Resources\images\yscb.png"/>
+                </Fluent:RibbonGroupBox>
 
 
+                <Fluent:RibbonGroupBox Header="预置宏观运营成本计算方法">
+                    <Fluent:Button Name="zsff" Header="折算方法" Icon="../../Resources\images\zsff.png"/>
+                    <Fluent:Button Name="zsxs" Header="折算系数" Icon="../../Resources\images\zsxs.png"/>
+                    <Fluent:Button Name="yycb" Header="运营成本" Icon="../../Resources\images\yycb.png"/>
+                </Fluent:RibbonGroupBox>
 
             </Fluent:RibbonTabItem>
 
+
             <Fluent:RibbonTabItem Header="土地复垦与绿化辅助设计">
+                <Fluent:RibbonGroupBox Header="土地复垦适宜性评价">
+                    <Fluent:Button Name="fkqy" Header="复垦区域" Icon="../../Resources\images\fkqy.png"/>
+                    <Fluent:Button Name="hhcd" Header="损毁程度" Icon="../../Resources\images\hhcd.png"/>
+                    <Fluent:Button Name="hjcs" Header="环境参数" Icon="../../Resources\images\hjcs.png"/>
+                    <Fluent:Button Name="syxyz" Header="适宜性因子" Icon="../../Resources\images\syxyz.png"/>
+                    <Fluent:Button Name="syxpj" Header="适宜性评价" Icon="../../Resources\images\syxpj.png"/>
+                </Fluent:RibbonGroupBox>
 
 
+                <Fluent:RibbonGroupBox Header="土地复垦辅助设计">
+                    <Fluent:Button Name="tjgl" Header="图件管理" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\tjgl.png"/>
+                    <Fluent:Button Name="trzk" Header="土壤状况" SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\trzk.png"/>
+                    <Fluent:Button Name="hfqk" Header="恢复情况"  SizeDefinition="Middle, Middle, Middle" Icon="../../Resources\images\hfqk.png"/>
+                    <Fluent:Button Name="jgyhmx" Header="结构优化模型" Icon="../../Resources\images\jgyhmx.png"/>
+                    <Fluent:Button Name="fkjh" Header="复垦计划" Icon="../../Resources\images\fkjh.png"/>
+                    <Fluent:Button Name="fkfa" Header="复垦方案" Icon="../../Resources\images\fkfa.png"/>
+                    <Fluent:Button Name="dtbz" Header="地图编制与导出" Icon="../../Resources\images\dtbz.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="复垦工程进度监管">
+                    <Fluent:Button Name="trcg"  Header="土壤重构" Icon="../../Resources\images\trcg.png"/>
+                    <Fluent:Button Name="zbcg" Header="植被重构" Icon="../../Resources\images\zbcg.png"/>
+                    <Fluent:Button Name="ptgc" Header="配套工程" Icon="../../Resources\images\ptgc.png"/>
+                    <Fluent:Button Name="jc" Header="监测与管护" Icon="../../Resources\images\jc.png"/>
+                    <Fluent:Button Name="lchf" Header="林草恢复" Icon="../../Resources\images\lchf.png"/>
+                    <Fluent:Button Name="ntfh" Header="农田防护" Icon="../../Resources\images\ntfh.png"/>
+                </Fluent:RibbonGroupBox>
 
             </Fluent:RibbonTabItem>
 
             <Fluent:RibbonTabItem Header="模拟开采与三维可视化仿真">
+                <Fluent:RibbonGroupBox Header="规划及优化建模">
+                    <Fluent:Button Name="bcfa" Header="剥采方案编制" Icon="../../Resources\images\bcfa.png"/>
+                    <Fluent:Button Name="zbpq" Header="指标配权" Icon="../../Resources\images\zbpq.png"/>
+                    <Fluent:Button Name="xxzs" Header="线性折算" Icon="../../Resources\images\xxzs.png"/>
+                    <Fluent:Button Name="fadb" Header="方案对比" Icon="../../Resources\images\fadb.png"/>
+                </Fluent:RibbonGroupBox>
 
 
+                <Fluent:RibbonGroupBox Header="交互绘图与模型渲染">
+                    <Fluent:Button Name="czgl" Header="材质管理"  SizeDefinition="Middle, Middle, Middle"  Icon="../../Resources\images\czgl.png"/>
+                    <Fluent:Button Name="ttgl" Header="贴图管理"  SizeDefinition="Middle, Middle, Middle"  Icon="../../Resources\images\ttgl.png"/>
+                    <Fluent:Button Name="dxtt" Header="地形贴图" SizeDefinition="Middle, Middle, Middle"  Icon="../../Resources\images\dxtt.png"/>
+                    <Fluent:Button Name="cjdh" Header="创建动画" Icon="../../Resources\images\cjdh.png"/>
+                    <Fluent:Button Name="wz" Header="文字" Icon="../../Resources\images\wz.png"/>
+                </Fluent:RibbonGroupBox>
+
+
+                <Fluent:RibbonGroupBox Header="模拟开采">
+                    <Fluent:Button Name="sypp" Header="索引匹配"  SizeDefinition="Middle, Middle, Middle"  Icon="../../Resources\images\sypp.png"/>
+                    <Fluent:Button Name="xrcs" Header="渲染参数" SizeDefinition="Middle, Middle, Middle"  Icon="../../Resources\images\xrcs.png"/>
+                    <Fluent:Button Name="dhcs" Header="动画参数" Icon="../../Resources\images\dhcs.png"/>
+                    <Fluent:Button Name="bccx" Header="剥采次序编制"  Icon="../../Resources\images\bccx.png"/>
+                    <Fluent:Button Name="mnkc" Header="模拟开采" Icon="../../Resources\images\mnkc.png"/>
+                </Fluent:RibbonGroupBox>
 
             </Fluent:RibbonTabItem>
-
-
-
-
-
 
         </Fluent:Ribbon>
 
